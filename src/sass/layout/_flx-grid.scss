@@ -1,0 +1,29 @@
+.c-pricing--flx,
+.c-pricing__item--flx {
+	display: flex;
+}
+
+.c-pricing--flx {
+
+	max-width: $container;
+	margin-left: auto;
+	margin-right: auto;
+
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.c-pricing__item--flx {
+	flex-direction: column;
+	flex: 0 1 rem(500);
+	align-items: stretch;
+}
+
+
+@media (min-width: $screen-sm) {
+
+	.c-pricing__item--flx {
+		flex: 1;
+	}
+}

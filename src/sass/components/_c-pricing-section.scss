@@ -1,0 +1,41 @@
+.c-pricing-section {
+
+	padding: rem(70) 0;
+
+	background-color: $tuna-blue;
+
+	&__title {
+		position: relative;
+
+		margin-bottom: rem(80);
+		padding: rem(10) 0;
+
+
+		@extend %heading-L;
+		color: #fff;
+		line-height: 1.2;
+		text-align: center;
+
+		&:after {
+			content: ' ';
+
+			position: absolute;
+			bottom: - rem(10);
+			left: 50%;
+
+			display: block;
+			width: rem(180);
+			height: rem(2);
+			margin-left: - rem(90);
+
+			background-color: $arsenic-blue;
+		}
+	}
+}
+
+.c-pricing-section--flx {
+	.c-pricing-section__title {
+		padding-left: rem($gutter/2);
+		padding-right: rem($gutter/2);
+	}
+}
